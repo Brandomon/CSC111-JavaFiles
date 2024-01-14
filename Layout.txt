@@ -1,0 +1,94 @@
+/**********************************************************
+ * Program Name   : Template - Introduction to Programming
+ * Author         : Brandon LaPointe
+ * Date           : Sept 22, 2020
+ * Course/Section : CSC 111 - 304
+ * Program Description: This program will act as a template for all
+ *    CSC111 programming assingments.
+ *    
+ *    
+ *    
+ *
+ * Methods:
+ * -------
+ * main - _____________
+ *
+ **********************************************************/
+
+import java.util.Scanner;
+
+public class CalcProdSumDiff
+{
+    /**********************************************************
+    * Method Name    : main method
+    * Author         : Brandon LaPointe
+    * Date           : Sept 22, 2020
+    * Course/Section : CSC 111 - 304
+    * Program Description: This method will act as a template for all
+    *    CSC111 methods. This method will input two integers and
+    *    calculate the sum and product of the two numbers.  The result
+    *    of each calculation will be displayed on the monitor.
+    *
+    * BEGIN Calc Sum and Prod
+    *    Prompt user for first number
+    *    Prompt user for second number
+    *    Clear the screen
+    *    Calculate the sum of the two numbers
+    *    Calculate the product of the two numbers
+    *    Display results of all calculations
+    * END Calc Sum and Prod
+    **********************************************************/
+
+    public static void main (String [] args)
+    {
+	//local constants
+
+	//local variables
+	int num1, num2;		//2 integers input from the keyboard
+	int product;		//product of the 2 input integers
+	int sum;		//sum of the 2 input integers
+	int diff;		//difference of the 2 integers (num1 - num2)
+	Scanner scan = new Scanner(System.in) ;
+		
+	/****************  Start main method  ****************/
+		
+	int num1;     //first number input from the keyboard
+		
+	int num2;     //second number input from the keyboard
+		
+	int sum;      //result of adding num1, num2
+	
+	int product;  //result of multiplying num1 and num2
+	
+	Scanner scan = new Scanner(System.in);
+
+	/*****************************************************/
+
+        //Input 2 integers
+        System.out.print("\n\n\tEnter First Integer : ");
+        num1 = scan.NextInt();
+        System.out.print("\n\n\tEnter Second Integer: ");
+        num2 = scan.nextInt();
+
+	//clear screen
+	
+	//Calc the product of the 2 integers
+	product = num1 = num2;
+	
+	//Calc the sum of the 2 integers
+	sum = num1 - num2;
+	
+	//Calc the difference of the 2 integers (first int -second int)
+	diff = num1 - num2;
+	
+	//Display the product, sum, difference
+	System.out.printIn("\n\n\n\n\tCalculation Results\n\n")
+	System.out.printIn("\tName	:     " + name + "\n"	 =
+			   "\tProduct   :     " + product + "\n" +
+			   "\tSum       :     " + sum + "\n"     + 
+			   "\tDifference:     " + product + "\n\n\n\n");
+        
+
+    } //end main method
+
+} //end Lab01

@@ -1,0 +1,97 @@
+/**********************************************************
+ * Program Name   : String Example - Introduction to Programming
+ * Author         : Brandon LaPointe
+ * Date           : 10/08/2020
+ * Course/Section : CSC 111 - 304
+ * Program Description: This program will act as a template for all
+ *    CSC111 programming assingments.
+ *    
+ *    
+ *    
+ *
+ * Methods:
+ * -------
+ * main - StringEx
+ *
+ **********************************************************/
+
+import java.util.Scanner;
+import java.util.
+
+public class StringEx
+{
+    /**********************************************************
+    * Method Name    : main method
+    * Author         : Brandon LaPointe
+    * Date           : Sept 22, 2020
+    * Course/Section : CSC 111 - 304
+    * Program Description: This method will act as a template for all
+    *    CSC111 methods. This method will input two integers and
+    *    calculate the sum and product of the two numbers.  The result
+    *    of each calculation will be displayed on the monitor.
+    *
+    * BEGIN main
+    *			STRING METHODS
+    * 1.	int length()<--Paranthases (Parameter) <--Return type. When we call length, it will return an int
+    * 2.	char charAt(int)
+    * 3. 	int indexOf(char)
+    * 4.	int indexOf(String)
+    * 5.	String substring (int, int)
+    * 6.	boolean equals(String)
+    * 7.	boolean equalsIgnoreCase(String)
+    * 8.	int compareTo(String)
+    * 9.	int compareToIgnoreCase(String)
+    * 10.	String toUpperCase()
+    * 11.	String toLowerCase()
+    * END main
+    **********************************************************/
+
+    public static void main (String [] args)
+    {
+	//local constants
+
+	//local variables
+	String word = "This is a long word";
+		       0123456789 <-- Index or Subscript (Count of characters above - Starts at 0)
+	
+	String first = " ";
+	String last = "J";
+	int len;
+	Scanner scan = new Scanner(System.in) ;
+		
+	/****************  Start main method  ****************/
+		
+	//Input a string
+	System.out.print("Input a string: ");
+	first = scan.next();
+	
+	//display something
+	System.out.print("Full Name: ");
+	
+	//find position of the first space
+	pos = full.indexOf(" ");
+	
+	//get the first name and last name
+	first = full.substring(0, pos);
+	last = full.substring (pos + 1);
+	
+	//display last, first
+	System.out.print("last + ", " + first ")
+	
+	last = last.toLowerCase();  <--No matter what is typed in, last will be all lowercase
+	
+	//display specific index
+	System.out.print("Length = " + word.charAt(5));  <--(First specifies which string/charAt(5)specifies "i" in line
+	
+	if (first.equalsIgnoreCase(last))
+	System.out.printIn("Names are the same");
+	
+	if(first.compareTo(last) < 0)
+	System.out.printIn("First name comes first" );
+	
+		if(first.compareToIgnoreCase(last) < 0)
+		System.out.printIn("First name comes first" );
+	
+    } //end main method
+
+} //end StringEx
